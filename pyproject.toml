@@ -1,27 +1,17 @@
-[tool.poetry]
+[project]
 name = "data-science-project"
+authors = ["Martin Petri Bagger"]
 version = "0.1.0"
-description = ""
-authors = ["Martin Petri Bagger <mpb@danskecommodities.com>"]
+description = "This is the virtual environment for the course 'data science project' at Aarhus University."
 readme = "README.md"
-packages = [{include = "data_science_project"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-requests = "^2.31.0"
-pandas = "^2.2.1"
-beautifulsoup4 = "^4.12.3"
-lxml = "^5.1.0"
-dotenv = "^0.9.9"
-python-twitter = "^3.5"
-urllib3 = "^2.3.0"
-
-
-
-[tool.poetry.group.dev.dependencies]
-jupyter = "^1.0.0"
-notebook = "^7.3.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "dotenv>=0.9.9",
+    "jupyter>=1.1.1",
+    "lxml>=6.0.2",
+    "pandas>=3.0.0",
+    "python-twitter>=3.5",
+    "requests>=2.32.5",
+    "urllib3>=2.6.3",
+]
